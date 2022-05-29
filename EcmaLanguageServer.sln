@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LanguageServer", "LanguageServer\LanguageServer.csproj", "{E76B21BE-03FF-40AB-B2E8-EDAFD46C0A08}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EcmaLanguageServer", "EcmaLanguageServer\EcmaLanguageServer.csproj", "{8A3AE163-D3F2-451D-AC81-100923E98FCD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E76B21BE-03FF-40AB-B2E8-EDAFD46C0A08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E76B21BE-03FF-40AB-B2E8-EDAFD46C0A08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E76B21BE-03FF-40AB-B2E8-EDAFD46C0A08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E76B21BE-03FF-40AB-B2E8-EDAFD46C0A08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A3AE163-D3F2-451D-AC81-100923E98FCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A3AE163-D3F2-451D-AC81-100923E98FCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A3AE163-D3F2-451D-AC81-100923E98FCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A3AE163-D3F2-451D-AC81-100923E98FCD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EEDCB3BC-639A-4656-856C-C295922D56C8}
+	EndGlobalSection
+EndGlobal

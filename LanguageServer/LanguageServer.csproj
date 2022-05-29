@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>netstandard1.1;net45;netstandard2.1</TargetFrameworks>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<PackageId>CXuesong.LanguageServer</PackageId>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Authors>CXuesong</Authors>
+		<Version>0.3.6-int.2</Version>
+		<AssemblyVersion>0.3.6.2</AssemblyVersion>
+		<FileVersion>0.3.6.2</FileVersion>
+		<Company />
+		<Description>A .NET Language Server infrastructure library for VSCode.</Description>
+		<Copyright>Copyright 2021 CXuesong</Copyright>
+		<PackageTags>vscode language-server language-server-protocol</PackageTags>
+		<NeutralLanguage>en-us</NeutralLanguage>
+		<PackageProjectUrl>https://github.com/CXuesong/LanguageServer.NET</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/CXuesong/LanguageServer.NET</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageReleaseNotes>See https://github.com/CXuesong/LanguageServer.NET/releases .</PackageReleaseNotes>
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
+		<SignAssembly>true</SignAssembly>
+		<AssemblyOriginatorKeyFile></AssemblyOriginatorKeyFile>
+		<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+		<NoWarn>$(NoWarn);1701;1702;1705;1573;1591;NU5105</NoWarn>
+		<PublishRepositoryUrl>True</PublishRepositoryUrl>
+		<AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Remove="Server\_private\**" />
+		<EmbeddedResource Remove="Server\_private\**" />
+		<None Remove="Server\_private\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="CXuesong.JsonRpc.DynamicProxy" Version="0.5.3" />
+		<PackageReference Include="Newtonsoft.Json" Version="10.0.2" />
+		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
+	</ItemGroup>
+
+	<PropertyGroup Condition=" $([System.Text.RegularExpressions.Regex]::IsMatch($(TargetFramework), `netstandard2.[1-9]$`)) ">
+		<DefineConstants>$(DefineConstants);BCL_FEATURE_SPAN;BCL_FEATURE_HASHCODE;LANG_FEATURE_INTERFACE_DEFAULT_METHODS</DefineConstants>
+	</PropertyGroup>
+
+</Project>
