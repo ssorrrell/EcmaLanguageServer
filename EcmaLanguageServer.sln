@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LanguageServer", "LanguageS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EcmaLanguageServer", "EcmaLanguageServer\EcmaLanguageServer.csproj", "{8A3AE163-D3F2-451D-AC81-100923E98FCD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcmaLanguageServer.Tests", "EcmaLanguageServer.Tests\EcmaLanguageServer.Tests.csproj", "{F64940A0-F296-437B-89BD-325ED5C3E0A1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{8A3AE163-D3F2-451D-AC81-100923E98FCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A3AE163-D3F2-451D-AC81-100923E98FCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A3AE163-D3F2-451D-AC81-100923E98FCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F64940A0-F296-437B-89BD-325ED5C3E0A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F64940A0-F296-437B-89BD-325ED5C3E0A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F64940A0-F296-437B-89BD-325ED5C3E0A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F64940A0-F296-437B-89BD-325ED5C3E0A1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
