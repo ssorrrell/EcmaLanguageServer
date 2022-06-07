@@ -18,9 +18,9 @@ namespace EcmaLanguageServer.Services
         {
             return new InitializeResult(new ServerCapabilities
             {
-                //HoverProvider = new HoverOptions(),
-                //SignatureHelpProvider = new SignatureHelpOptions("()"),
-                //CompletionProvider = new CompletionOptions(true, "."),
+                HoverProvider = new HoverOptions(),
+                SignatureHelpProvider = new SignatureHelpOptions("()"),
+                CompletionProvider = new CompletionOptions(true, "."),
                 TextDocumentSync = new TextDocumentSyncOptions
                 {
                     OpenClose = true,
